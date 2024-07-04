@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+ 
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+ 
+img {
+    max-width: 100%;
+    display: block;
+}
+ 
+header {
+    padding: 20px;
+    background-color: #101010;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a, header a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    background-color: #101010;
+    color: #fff;
+    justify-content: center;
+}
+
+.hero__container {
+    padding: 20px;
+}
+
+.hero__container, .hero__image {
+    width: 50%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    padding: 64px 16px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card__text {
+    background-color: #101010;
+    padding: 16px;
+    color: #fff;
+}
+
+.card__text a {
+    color: #fff;
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.eventi {
+    padding: 64px 16px;
+    background-color: #101010;
+    color: #fff;
+
+}
+
+.card_eventi {
+    color: #fff;
+
+}
+
+.info {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 32px
+}
+
+.card_container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.visite {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 64px 16px;
+    gap: 16px;
+}
+
+.visite div {
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #101010;
+    color:#fff;
+    justify-content: space-between;
+    padding: 64px 16px;
+    gap: 16px;
+}
+
+@media (max-width:600px) /* o la misura che volete */  {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__container, .hero__image {
+        width: 100%;
+    }
+
+    .visite {
+        flex-direction: column;
+    }
+    
+    .visite div {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
