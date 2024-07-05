@@ -135,13 +135,18 @@ nav a, header a {
     list-style: none;
 }
 
+.text-footer {
+    padding-left: 100px;
+    padding-right:
+}
+
 footer {
     display: flex;
     width: 100%;
     background-color: #101010;
     color:#fff;
     justify-content: space-between;
-    padding: 64px 16px;
+    padding: 40px;
     gap: 16px;
 }
 
