@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     padding: 0;
 }
 
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
 .marchio-nav {
     max-width: 50px;
 }
@@ -188,11 +193,6 @@ a {
     list-style: none;
 }
 
-.text-footer {
-    padding-left: 100px;
-    padding-right:
-}
-
 footer {
     display: flex;
     width: 100%;
@@ -212,6 +212,18 @@ footer {
         width: 100%;
     }
 
+    .info {
+        padding-left: 15px;
+    }
+
+    .eventi {
+        padding-left: 15px;
+    }
+
+    .card_container {
+        padding-left: 15px;
+    }
+
     .visite {
         flex-direction: column;
     }
@@ -223,4 +235,7 @@ footer {
     footer {
         flex-direction: column;
     }
-}
+
+    .hero__container {
+        font-size: small;
+    }
