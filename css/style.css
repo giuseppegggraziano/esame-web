@@ -194,18 +194,9 @@ a {
     list-style: none;
 }
 
-<<<<<<< HEAD
 ol {
     list-style-position: inside;
     padding: auto;
-=======
-#condizioni-uso {
-    margin-top: 15px;
-}
-
-.punti-condizioni-uso {
-    list-style-position: inside 10px;
->>>>>>> 906b559b9417b5ca7b3b70f4d86a25e04f6c875a
 }
 
 footer {
