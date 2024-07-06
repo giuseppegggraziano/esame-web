@@ -193,6 +193,12 @@ a {
     list-style: none;
 }
 
+/* non funge */
+.condizioni-uso {
+    list-style: ;
+}
+/* non funge */
+
 footer {
     display: flex;
     width: 100%;
