@@ -4,7 +4,7 @@ body {
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+h1, h2, h3, h4, h5, h6, p, ul, /* qua ci stava ol ma preveniva il rientro della lista nelle condizioni e trattamento, però questo ha portato alla creazione di uno spazio laterale */{ 
     margin: 0;
     padding: 0;
 }
@@ -194,11 +194,10 @@ a {
     list-style: none;
 }
 
-/* non funge */
-.condizioni-uso {
-    list-style: ;
+ol {
+    list-style-position: inside;
+    padding: auto;
 }
-/* non funge */
 
 footer {
     display: flex;
