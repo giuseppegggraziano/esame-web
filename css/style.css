@@ -194,11 +194,13 @@ a {
     list-style: none;
 }
 
-/* non funge */
-.condizioni-uso {
-    list-style: ;
+#condizioni-uso {
+    margin-top: 15px;
 }
-/* non funge */
+
+.punti-condizioni-uso {
+    list-style-position: inside 10px;
+}
 
 footer {
     display: flex;
