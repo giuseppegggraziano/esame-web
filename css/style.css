@@ -77,6 +77,33 @@ nav a, header a {
     max-width: max-content;
 }
 
+.universale {
+    display: flex;
+    background-color: #fff;
+    color: #000000;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.universale__container {
+    padding: 20px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.universale__container, .universale__image {
+    width: 40%; /* 50%?? */
+}
+
+.universale__image img {
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
 a {
     position: relative;
     text-decoration: none;
@@ -201,11 +228,11 @@ ol {
 
 footer {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     background-color: #101010;
     color:#fff;
     justify-content: space-between;
-    padding: 20px 16px;
+    padding: 20px 5%;
     gap: 16px;
 }
 
@@ -244,5 +271,18 @@ footer {
 
     .hero__container {
         font-size: small;
+    }
+
+    .universale__container {
+        font-size: small;
+        width: 100%;
+    }
+
+    .universale {
+        flex-direction: column;
+    }
+
+    .universale__container, .universale__image {
+        width: 100%;
     }
     }
