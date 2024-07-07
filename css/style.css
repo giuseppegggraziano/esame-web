@@ -4,10 +4,10 @@ body {
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, /* qua ci stava ol ma preveniva il rientro della lista nelle condizioni e trattamento, però questo ha portato alla creazione di uno spazio laterale */{ 
+h1, h2, h3, h4, h5, h6, p, ul, { 
     margin: 0;
     padding: 0;
-}
+} /* qua ci stava ol ma preveniva il rientro della lista nelle condizioni e trattamento, però questo ha portato alla creazione di uno spazio laterale */
 
 .titoletti-cookie {
     margin-top: 25px;
