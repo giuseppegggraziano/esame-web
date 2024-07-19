@@ -28,7 +28,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="titolo"><h2>eventi</h2></div>
+    <div class="titolo"><h2>Eventi</h2></div>
     <style>
         .titolo{ 
             padding-left: 40pt;
@@ -54,10 +54,14 @@
             gap: 5px; /* Spaziatura tra le immagini */
 
         }
-        img {
+        .img_lista {
             max-width: 350px; /* Larghezza massima delle immagini */
             height: auto; /* Mantiene il rapporto di aspetto delle immagini */
             margin-left: 50px;
+            margin-right: 50px;
+            object-fit: cover;
+            width: 200px;/*definisce la largezza delle img*/
+            height: 250px;/*definisce quanto deve esere alta una img*/
         }
         .grid-container img {
             max-width: 50%; /* Impedisce alle immagini di superare la larghezza del contenitore */
@@ -72,6 +76,8 @@
         }
         .text-container {
             margin-right: 50px;
+            margin-bottom: 30px;
+            margin-top: 30px;
             padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
             flex:1;
         }
@@ -79,7 +85,7 @@
 </style>
     <div class="row">
         <div class="container">
-            <img src="img/giardino 1.jpg" alt="Immagine 1">
+            <img src="img/abitare-gli-abiti.jpg" alt="Immagine 1" class="img_lista">
             <div class="text-container">
                 <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -93,7 +99,7 @@
             </div>
         </div>
           <div class="container">
-            <img src="img/giardino 2.jpg" alt="Immagine 2">
+            <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="Immagine 2" class="img_lista">
             <div class="text-container">
                 <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <pre></pre><p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -110,7 +116,7 @@
 
     <div class="row">
         <div class="container">
-            <img src="img/museo 2.jpg" alt="Immagine 3">
+            <img src="img/notte-dei-musei.jpg" alt="Immagine 3" class="img_lista">
             <div class="text-container">
                 <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -124,7 +130,7 @@
             </div>
         </div>
         <div class="container">
-            <img src="img/museo 1.png" alt="Immagine 4">
+            <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="Immagine 4" class="img_lista">
             <div class="text-container">
                 <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -141,7 +147,7 @@
 </div>
 <div class="row">
     <div class="container">
-        <img src="img/Bar_al_buio.jpg" alt="Immagine 3">
+        <img src="img/Bar_al_buio.jpg" alt="Immagine 3" class="img_lista">
         <div class="text-container">
             <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -155,7 +161,7 @@
         </div>
     </div>
     <div class="container">
-        <img src="img/Showroom 1.2.png" alt="Immagine 4">
+        <img src="img/Showroom 1.2.png" alt="Immagine 4" class="img_lista">
         <div class="text-container">
             <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
                 <p><i>6 Marzo 2023 alle 17:00</i></p>
@@ -168,7 +174,6 @@
                  11 Febbraio dalle 18.00 alle 22.00</p>
         </div>
     </div>
-</div>
 </div>
 <!-- pre_footer-->
     <Section class="visite">
@@ -191,7 +196,9 @@
                 Per informazioni generali mè possibile mandare una mail all'indirizzo <b>info@polotattile.it</b>
             </p>
         </div>  
+        <div class="img">
             <img src="img/inserire nella home.jpg" alt="">
+        </div>
         </div>
 
     </Section>
