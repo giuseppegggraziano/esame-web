@@ -15,7 +15,7 @@
         <header>
             
             <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
-            
+            <!--
             <nav>
                 <ul>
                     <li><a href="#primo" name="#primo">Museo Tattile</a></li>
@@ -24,7 +24,21 @@
                     <li><a href="#quarto" name="#quarto">Showroom</a></li>
                 </ul>
             </nav>
+            -->
+            <nav>
+                <ul>
+                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
+                        <div class="dropdown-content">
+                            <a href="#">Museo Tattile</a>
+                            <a href="#">Giardino sensoriale</a>
+                            <a href="#">Bar al buio</a>
+                            <a href="#">Showroom</a>
+                        </div>
+                    </li>
 
+                    <li><a href="#primo" name="#primo"><button class="button button1">Eventi</button></a></li>
+                </ul>
+            </nav> 
         </header>
 
         <section class="hero"> 
@@ -100,10 +114,12 @@
         
                         <div class="cover__content">
                             <a href="eventi.html" target="_blank" rel="noopener noreferrer">
-                                <img src="img/abitare-gli-abiti.jpg" alt="Presentazione libro Abitare gli abiti">
-                                <h3>Presentazione libro "Abitare gli abiti"</h3>
+                                <div class="eventxhover">
+                                    <img src="img/abitare-gli-abiti.jpg" alt="Presentazione libro Abitare gli abiti">
+                                    <h3>"Abitare gli abiti"</h3>
+                                    <p>6 marzo 2023 17:00</p>
+                                </div>
                             </a>
-                            <p>6 marzo 2023 17:00</p>
 
                         </div>
                     </div>
@@ -111,41 +127,42 @@
                     <div class="cover">
                         <div class="cover__content">
                             <a href="eventi.html" target="_blank" rel="noopener noreferrer">
-                            
-                                <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="Festival le vie dei tesori">
-                            
-                                <h3>Festival "le vie dei tesori"</h3>  
+                                <div class="eventxhover">   
+                                    <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="Festival le vie dei tesori">
+                                    <h3>Festival "le vie dei tesori"</h3>  
+                                    <p>6 marzo 2023 17:00</p>
+                                </div>    
                             </a>
-                            <p>6 marzo 2023 17:00</p>
                         </div>
                     </div>
 
                     <div class="cover">
                         <div class="cover__content">
                             <a href="eventi.html" target="_blank" rel="noopener noreferrer">
-                                
-                            <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="Una domenica al museo">
-                            <h3> Una domenica al museo</h3>
+                                <div class="eventxhover">   
+                                    <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="Una domenica al museo">
+                                    <h3> Una domenica al museo</h3>
+                                    <p>6 marzo 2023 17:00</p>
+                                </div>
                             </a>
-                            <p>6 marzo 2023 17:00</p>
                         </div>
                     </div>
 
                     <div class="cover">
                         <div class="cover__content">
                         <a href="eventi.html" target="_blank" rel="noopener noreferrer">
-                            <img src="img/notte-dei-musei.jpg" alt="Una Notte di Luce al Museo">
-                            <h3>Una Notte di "Luce" al Museo</h3>
+                            <div class="eventxhover">
+                                <img src="img/notte-dei-musei.jpg" alt="Una Notte di Luce al Museo">
+                                <h3>Una Notte di "Luce" al Museo</h3>
+                                <p>6 marzo 2023 17:00</p>
+                            </div>
                         </a>
-                            <p>6 marzo 2023 17:00</p>
-                        </div>
+                    </div>
                     </div>
                 </div>
             
                 <div style="margin: auto; text-align: center;">
-                    <a href="eventi.html">
-                        <button style="border: none; background-color:yellow;color: black ;padding: 10px 20px; text-align: center; text-decoration: none; font-size:medium; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer; font-weight: bolder;">Altri eventi</button>
-                    </a>
+                    <button class="button button1"><strong>Altri eventi</strong> </button>
                 </div>
 
             </section>
