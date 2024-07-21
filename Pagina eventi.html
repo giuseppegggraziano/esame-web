@@ -10,18 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<!--////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--inizio testata (nav bar)///////////////////////////////////////////////////////-->
 <body>
     <header>
+        
         <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
+        <!--
         <nav>
             <ul>
-                <li><a href="#primo" name="#primo">Aree</a></li>
-                <li><a href="chi-siamo.html">Chi siamo</a></li>
-                <li><a href="#terzo" name="#terzo">Eventi</a></li>
-                <li><a href="#quarto" name="#quarto">Visite</a></li>
+                <li><a href="#primo" name="#primo">Museo Tattile</a></li>
+                <li><a href="chi-siamo.html">Giardino sensoriale</a></li>
+                <li><a href="#terzo" name="#terzo">Bar al buio</a></li>
+                <li><a href="#quarto" name="#quarto">Showroom</a></li>
             </ul>
         </nav>
+        -->
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
+                    <div class="dropdown-content">
+                        <a href="#">Museo Tattile</a>
+                        <a href="#">Giardino sensoriale</a>
+                        <a href="#">Bar al buio</a>
+                        <a href="#">Showroom</a>
+                    </div>
+                </li>
+
+                <li><a href="#primo" name="#primo"><button class="button button1">Eventi</button></a></li>
+            </ul>
+        </nav> 
     </header>
  
 <!--eventi////////////////////////////////////////////////////-->
@@ -30,151 +47,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="titolo"><h2>Eventi</h2></div>
     <style>
-        .titolo{ 
-            padding-left: 40pt;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-        .container {
-            display: flex;
-            align-items: center; /* Allinea verticalmente il testo al centro delle immagini */
-            gap: 10px; /* Spaziatura tra le immagini e il testo */
-            margin-bottom: 20px; /* Spaziatura tra le sezioni */
-            width:50%; /*imposta larghezza del container per avere due container*/ 
-            box-sizing: border-box; /*include padding e border nella largheza */
-        }
-        .row {
-            display:flex;
-            width:100%;
-            gap:5px;
-        }
-        .grid-container {
-            display: flex;
-            grid-template-columns: 1fr 1fr; /* Due colonne di larghezza uguale */
-            gap: 5px; /* Spaziatura tra le immagini */
 
-        }
-        .img_lista {
-            max-width: 350px; /* Larghezza massima delle immagini */
-            height: auto; /* Mantiene il rapporto di aspetto delle immagini */
-            margin-left: 50px;
-            margin-right: 50px;
-            object-fit: cover;
-            width: 200px;/*definisce la largezza delle img*/
-            height: 250px;/*definisce quanto deve esere alta una img*/
-        }
-        .grid-container img {
-            max-width: 50%; /* Impedisce alle immagini di superare la larghezza del contenitore */
-            height: auto; /* Mantiene il rapporto di aspetto delle immagini */
-            padding-right: 30px;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            padding-left: 30px
-        }
-        p { 
-            overflow: hidden; /* Per evitare che il testo si sovrapponga alle immagini */
-        }
-        .text-container {
-            margin-right: 50px;
-            margin-bottom: 30px;
-            margin-top: 30px;
-            padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
-            flex:1;
-        }
-        
 </style>
     <div class="row">
         <div class="container">
             <img src="img/abitare-gli-abiti.jpg" alt="Immagine 1" class="img_lista">
             <div class="text-container">
-                <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
-                <p><i>6 Marzo 2023 h17:00</i></p>
-                <p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
+            <div class="gerarchia"><h3><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h3>
+            </div> 
+            <div class="gerarchia">
+                <p><i>11 Febbraio 2024 h18:00 - 22:00</i></p>
+            </div>
+            
+            <div class="gerarchia">
+                <p>Apertura straordinaria, Siamo felici di comunicare che giorno 11 Giugno 2024
                 effettueremo un’apertura straordinaria per permettere 
                 ai visitatori di poter fruire di un momento di libertà 
                 da dedicare alle proprie famiglie con la nostra esperienza 
                 sensoriale. Il Polo Tattile è lieto di invitarvi Sabato
                  11 Febbraio dalle 18.00 alle 22.00</p>
             </div>
+            <div class="gerarchia">
+                <p><i><b>Leggi di più...</b></i></p>
+            </div>
+            </div>
         </div>
           <div class="container">
-            <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="Immagine 2" class="img_lista">
+            <img src="img/notte-dei-musei.jpg" alt="Immagine 2" class="img_lista">
             <div class="text-container">
-                <h2><p><b>Festival "Le vie dei Tesori"</b></p></h2>
-                <pre></pre><p><i>6 Marzo 2023 h17:00</i></p>
-                <pre></pre><p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
-                effettueremo un’apertura straordinaria per permettere 
-                ai visitatori di poter fruire di un momento di libertà 
-                da dedicare alle proprie famiglie con la nostra esperienza 
-                sensoriale. 
-                <a><i>Leggi di più</i></a></p>
+                <div class="gerarchia">
+                    <h3><p><b>Notte di luce al Museo</b></p></h3>
+                </div>
+                <div class="gerarchia">
+                <p><i>21 dicembre 2023 h17:30 - 22:30</i></p>
+                </div>
+                <div class="gerarchia">
+                    <p>Il Polo Tattile Multimediale della Stamperia Regionale Braille invita all'evento "Notte di luce al museo".
+                        I visitatori potranno esplorare opere d'arte tattili e partecipare 
+                        a esperienze sensoriali uniche in un'atmosfera natalizia. 
+                        Sarà possibile acquistare cuori di cioccolato Telethon per sostenere
+                        la ricerca sulle malattie genetiche dell'occhio. 
+                </div>
+                    <div class="gerarchia">
+                        <a><i><b>Leggi di più...</b></i></a></p>
+                </div>
             </div>
          </div>
     </div>
 
     <div class="row">
         <div class="container">
-            <img src="img/notte-dei-musei.jpg" alt="Immagine 3" class="img_lista">
+            <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="Immagine 3" class="img_lista">
             <div class="text-container">
-                <h2><p><b>Una domenica al Museo</b></p></h2>
-                <p><i>8 Gennaio 2023 h17:00</i></p>
-                <p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
-                effettueremo un’apertura straordinaria per permettere 
-                ai visitatori di poter fruire di un momento di libertà 
-                da dedicare alle proprie famiglie con la nostra esperienza 
-                sensoriale. Il Polo Tattile è lieto di invitarvi Sabato
-                 11 Febbraio dalle 18.00 alle 22.00</p>
+                <div class="gerarchia">
+                    <h3><p><b>Festival "Le vie dei Tesori"</b></p></h3>  
+                </div>
+                <div class="gerarchia">
+                    <p><i>7 ottobre 2023 h10:00 - 18:00</i></p>
+                </div>
+                <div class="gerarchia">
+                <p>
+            Il Polo Tattile Multimediale partecipa al Festival de
+                    "Le Vie Dei Tesori" e sarà aperto per 5 weekend a partire dal 7 ottobre 2023,
+                    il sabato e la domenica dalle 10:00 alle 18:00 (ultimo ingresso alle 16:00).
+                    Per informazioni sulle modalità di accesso, visitare il sito www.leviedeitesori.it
+                    o contattare la sede al 095500177. 
+                </p>
+                </div>
+                <div class="gerarchia">
+                    <p><i><b>Leggi di più...</b></i></p>
+                </div>
             </div>
         </div>
         <div class="container">
             <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="Immagine 4" class="img_lista">
             <div class="text-container">
-                <h2><p><b>Notte di "Luce" al museo”</b></p></h2>
-                <p><i>28 Febbraio 2023 h17:00</i></p>
-                <p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
-                effettueremo un’apertura straordinaria per permettere 
-                ai visitatori di poter fruire di un momento di libertà 
-                da dedicare alle proprie famiglie con la nostra esperienza 
-                sensoriale. Il Polo Tattile è lieto di invitarvi Sabato
-                 11 Febbraio dalle 18.00 alle 22.00</p>
+                <h3><p><b>Una domenica al Museo</b></p></h3>
+                <div class="gerarchia">
+                    <p><i>5 Maggio 2023 h17:00 - 21:00</i></p>
+                </div>
+                <div class="gerarchia">
+                <p>
+                Il Polo Tattile Multimediale della Stamperia Regionale Braille di Catania invita il pubblico a 
+                "Una Domenica al Museo" I visitatori potranno esplorare capolavori d'arte attraverso 
+                il tatto, partecipare a esperienze sensoriali uniche e visitare il "Bar al Buio".
+                Sarà possibile acquistare cuori di biscotto Telethon per sostenere.
+                </p>
+               </div>
+                <div class="gerarchia">
+                    <p><i><b>Leggi di più...</b></i></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="container">
-        <img src="img/Bar_al_buio.jpg" alt="Immagine 3" class="img_lista">
-        <div class="text-container">
-            <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
-                <p><i>6 Marzo 2023 alle 17:00</i></p>
-                <p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
-                effettueremo un’apertura straordinaria per permettere 
-                ai visitatori di poter fruire di un momento di libertà 
-                da dedicare alle proprie famiglie con la nostra esperienza 
-                sensoriale. Il Polo Tattile è lieto di invitarvi Sabato
-                 11 Febbraio dalle 18.00 alle 22.00</p>
-        </div>
-    </div>
-    <div class="container">
-        <img src="img/Showroom 1.2.png" alt="Immagine 4" class="img_lista">
-        <div class="text-container">
-            <h2><p><b>Presentazione Libro “Abitare gli abiti”</b></p></h2>
-                <p><i>6 Marzo 2023 alle 17:00</i></p>
-                <p>Apertura straordinaria
-                Siamo felici di comunicare che giorno 11 Giugno 2024
-                effettueremo un’apertura straordinaria per permettere 
-                ai visitatori di poter fruire di un momento di libertà 
-                da dedicare alle proprie famiglie con la nostra esperienza 
-                sensoriale. Il Polo Tattile è lieto di invitarvi Sabato
-                 11 Febbraio dalle 18.00 alle 22.00</p>
-        </div>
-    </div>
-</div>
+
 <!-- pre_footer-->
 <Section class="visite">
 
@@ -195,6 +161,7 @@
             Vi preghiamo di specificare sempre il <b>numero di visitatori</b>, la <b>data</b> e un <b>contatto</b> al quale confermare la visita.
             Per informazioni generali mè possibile mandare una mail all'indirizzo <b>info@polotattile.it</b>
         </p>
+        <div class="gerarchia">
         <p style="font-weight: bolder;">
             Orari visite 
         </p>
@@ -206,13 +173,14 @@
             <li>Dom e festivi chiuso</li>
         </ul>
     </div>
+    </div>
 
     <div>  
         <img src="img/inserire nella home.jpg" alt="">
     </div>
 
+<!-- inizio footer -->
 
-
-</body>
+ì</body>
 
 </html>
