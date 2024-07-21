@@ -243,9 +243,10 @@ a {
 }
 
 .eventi {
-    padding: 64px 0px 64px 0px;
+    padding: 1px 0px 64px 0px;
     background-color: #101010;
     color: #fff;
+    margin-top: 64px;
 }
 
 .card_eventi {
