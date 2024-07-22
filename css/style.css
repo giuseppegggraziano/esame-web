@@ -55,66 +55,31 @@ nav a, header a {
     text-decoration: none;
 }
 
-/*
-
-    .hero {
-        display: flex;
-        background-color: #101010;
-        color: #fff;
-        justify-content: center;
-    }
-
-    .hero__container {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero__container, .hero__image {
-        max-width: 50%;
-    }
-
-    .hero p {
-        font-size: smaller;
-        padding-top: 20px;
-    }
-
-    .hero a {
-        max-width: max-content;
-    }
-
-*/
-
-.containertest {
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0));
-    position: relative;
-    text-align: center;
-    color: white;
+.hero {
+    display: flex;
+    background-color: #101010;
+    color: #fff;
+    justify-content: center;
 }
 
-.heroimage {
-    width:100%;
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    /* transform: scaleX(-1); serve a riflettere l'img */
+.hero__container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* .box {   per gradient hero
-    width: 100vw;
-    height: 90vh;
-} */
+.hero__container, .hero__image {
+    max-width: 50%;
+}
 
-.herotext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -50%);
-    position: ;
-    background-color: rgb(0, 0, 0);
-    color: white; padding: 20px;
-    text-align: left;
+.hero p {
+    font-size: smaller;
+    padding-top: 20px;
+}
+
+.hero a {
+    max-width: max-content;
 }
 
 .universale {
@@ -278,10 +243,9 @@ a {
 }
 
 .eventi {
-    padding: 1px 0px 32px 0px;
+    padding: 64px 0px 64px 0px;
     background-color: #101010;
     color: #fff;
-    margin-top: 64px;
 }
 
 .card_eventi {
@@ -382,23 +346,12 @@ footer {
 }
 
 @media (max-width:600px) /* o la misura che volete */  {
-    /* .hero {
+    .hero {
         flex-direction: column;
     }
 
     .hero__container, .hero__image {
         width: 100%;
-    } */
-
-    .herotext { /* perchè non funziona? */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: ;
-        background-color: rgb(0, 0, 0);
-        color: white; padding: 20px;
-        text-align: left;
     }
 
     .info {
@@ -441,16 +394,9 @@ footer {
     .universale__container, .universale__image {
         width: 100%;
     }
-<<<<<<< Updated upstream
-/* inizio css. pagina Eventi */
 
-}
-.titolo{ 
-=======
-}
-/*css   Pagina Eventi */
-.titolo_lista{ 
->>>>>>> Stashed changes
+/* inizio css. pagina Eventi */
+.titolo_lista {
     padding-left: 40pt;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -460,28 +406,21 @@ footer {
     align-items: center; /* Allinea verticalmente il testo al centro delle immagini */
     gap: 10px; /* Spaziatura tra le immagini e il testo */
     margin-bottom: 20px; /* Spaziatura tra le sezioni */
-    width:50%; /*imposta larghezza del container per avere due container*/ 
-    box-sizing: border-box; /*include padding e border nella largheza */
+    width: 50%; /* Imposta la larghezza del container per avere due container affiancati */
+    box-sizing: border-box; /* Include padding e border nella larghezza */
 }
 .row {
-    display:flex;
-    width:100%;
-    gap:5px;
-}
-.grid-container {
     display: flex;
-    grid-template-columns: 1fr 1fr; /* Due colonne di larghezza uguale */
-    gap: 5px; /* Spaziatura tra le immagini */
-
+    width: 100%;
+    gap: 5px;
 }
 .img_lista {
     max-width: 350px; /* Larghezza massima delle immagini */
-    height: auto; /* Mantiene il rapporto di aspetto delle immagini */
+    width: 200px; /* Definisce la larghezza delle immagini */
+    height: 250px; /* Definisce l'altezza delle immagini */
+    object-fit: cover; /* Mantiene il rapporto di aspetto delle immagini e riempie il contenitore */
     margin-left: 50px;
     margin-right: 50px;
-    object-fit: cover;
-    width: 200px;/*definisce la largezza delle img*/
-    height: 250px;/*definisce quanto deve esere alta una img*/
 }
 .grid-container img {
     max-width: 50%; /* Impedisce alle immagini di superare la larghezza del contenitore */
@@ -489,31 +428,20 @@ footer {
     padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-left: 30px
+    padding-left: 30px;
 }
 p { 
     overflow: hidden; /* Per evitare che il testo si sovrapponga alle immagini */
 }
 .text-container {
     margin-right: 50px;
-    margin-bottom: 30px;
-    margin-top: 30px;
     padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
-    flex:1;
+    flex: 1;
 }
-<<<<<<< Updated upstream
 .gerarchia{
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .spazio_testo{
     padding-top: 15px;
-=======
-.spazio_testo { 
-    padding-top: 25px;
-}
-.gerarchia{ 
-    padding-top: 10px;
-    padding-bottom: 10px;
->>>>>>> Stashed changes
 }
