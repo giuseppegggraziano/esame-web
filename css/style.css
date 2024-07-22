@@ -441,10 +441,16 @@ footer {
     .universale__container, .universale__image {
         width: 100%;
     }
+<<<<<<< Updated upstream
 /* inizio css. pagina Eventi */
 
 }
 .titolo{ 
+=======
+}
+/*css   Pagina Eventi */
+.titolo_lista{ 
+>>>>>>> Stashed changes
     padding-left: 40pt;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -495,10 +501,19 @@ p {
     padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
     flex:1;
 }
+<<<<<<< Updated upstream
 .gerarchia{
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .spazio_testo{
     padding-top: 15px;
+=======
+.spazio_testo { 
+    padding-top: 25px;
+}
+.gerarchia{ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+>>>>>>> Stashed changes
 }
