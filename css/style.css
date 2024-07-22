@@ -396,7 +396,8 @@ footer {
     }
 
 /* inizio css. pagina Eventi */
-.titolo_lista {
+}
+.titolo_lista{ 
     padding-left: 40pt;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -406,21 +407,28 @@ footer {
     align-items: center; /* Allinea verticalmente il testo al centro delle immagini */
     gap: 10px; /* Spaziatura tra le immagini e il testo */
     margin-bottom: 20px; /* Spaziatura tra le sezioni */
-    width: 50%; /* Imposta la larghezza del container per avere due container affiancati */
-    box-sizing: border-box; /* Include padding e border nella larghezza */
+    width:50%; /*imposta larghezza del container per avere due container*/ 
+    box-sizing: border-box; /*include padding e border nella largheza */
 }
 .row {
+    display:flex;
+    width:100%;
+    gap:5px;
+}
+.grid-container {
     display: flex;
-    width: 100%;
-    gap: 5px;
+    grid-template-columns: 1fr 1fr; /* Due colonne di larghezza uguale */
+    gap: 5px; /* Spaziatura tra le immagini */
+
 }
 .img_lista {
     max-width: 350px; /* Larghezza massima delle immagini */
-    width: 200px; /* Definisce la larghezza delle immagini */
-    height: 250px; /* Definisce l'altezza delle immagini */
-    object-fit: cover; /* Mantiene il rapporto di aspetto delle immagini e riempie il contenitore */
+    height: auto; /* Mantiene il rapporto di aspetto delle immagini */
     margin-left: 50px;
     margin-right: 50px;
+    object-fit: cover;
+    width: 250px;/*definisce la largezza delle img*/
+    height: 300px;/*definisce quanto deve esere alta una img*/
 }
 .grid-container img {
     max-width: 50%; /* Impedisce alle immagini di superare la larghezza del contenitore */
@@ -428,15 +436,17 @@ footer {
     padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 30px
 }
 p { 
     overflow: hidden; /* Per evitare che il testo si sovrapponga alle immagini */
 }
 .text-container {
     margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
-    flex: 1;
+    flex:1;
 }
 .gerarchia{
     padding-top: 5px;
