@@ -55,31 +55,66 @@ nav a, header a {
     text-decoration: none;
 }
 
-.hero {
-    display: flex;
-    background-color: #101010;
-    color: #fff;
-    justify-content: center;
+/*
+
+    .hero {
+        display: flex;
+        background-color: #101010;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .hero__container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__container, .hero__image {
+        max-width: 50%;
+    }
+
+    .hero p {
+        font-size: smaller;
+        padding-top: 20px;
+    }
+
+    .hero a {
+        max-width: max-content;
+    }
+
+*/
+
+.containertest {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.hero__container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.heroimage {
+    width:100%;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    /* transform: scaleX(-1); serve a riflettere l'img */
 }
 
-.hero__container, .hero__image {
-    max-width: 50%;
-}
+/* .box {   per gradient hero
+    width: 100vw;
+    height: 90vh;
+} */
 
-.hero p {
-    font-size: smaller;
-    padding-top: 20px;
-}
-
-.hero a {
-    max-width: max-content;
+.herotext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    position: ;
+    background-color: rgba(0, 0, 0, 0);
+    color: white; padding: 20px;
+    text-align: left;
 }
 
 .universale {
@@ -347,13 +382,23 @@ footer {
 }
 
 @media (max-width:600px) /* o la misura che volete */  {
-    .hero {
+    /*.hero {
         flex-direction: column;
     }
 
     .hero__container, .hero__image {
         width: 100%;
-    }
+    } */
+
+    .herotext { /* perchè non funziona? */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: ;
+        background-color: rgb(0, 0, 0, 0);
+        color: white; padding: 20px;
+        text-align: left;
 
     .info {
         padding-left: 15px;
