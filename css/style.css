@@ -415,6 +415,91 @@ footer {
     gap: 16px;
 }
 
+/* test eventi */
+
+.contenitore-eventi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: auto;
+    padding: 64px 16px;
+    gap: 16px;
+}
+
+.singolo-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: auto;
+    padding: 64px 16px;
+    gap: 16px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.evento img {
+    max-height: 100%;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+
+}
+
+.paragrafo-tagliato {
+    display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 10; /* Numero di righe da mostrare */
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+
+/* fine test eventi */
+
+.griglia-eventi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.griglia-eventi .singolo-evento .text {  
+    padding: 16px;
+    background-color: ;
+    /* align-content: space-evenly; */
+}
+
+.griglia-eventi .singolo-evento {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+.griglia-eventi .singolo-evento img {
+    width: 250px;
+    /* height: 250px; /*forse da togliere*/
+    object-fit: cover;
+}
+
+.paragrafo-troncato {
+    padding: 20px 0px 0px 0px;
+    display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 12; /* Numero di righe da mostrare */
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+
+
+
+/* fine test eventi */
+
 @media (max-width:600px) /* o la misura che volete */  {
     /*.hero {
         flex-direction: column;
@@ -476,63 +561,16 @@ footer {
         width: 100%;
     }
 
-/* inizio css. pagina Eventi */
+    .griglia-eventi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
-.titolo_lista{ 
-    padding-left: 40pt;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.container {
-    display: flex;
-    align-items: center; /* Allinea verticalmente il testo al centro delle immagini */
-    gap: 10px; /* Spaziatura tra le immagini e il testo */
-    margin-bottom: 20px; /* Spaziatura tra le sezioni */
-    width:50%; /*imposta larghezza del container per avere due container*/ 
-    box-sizing: border-box; /*include padding e border nella largheza */
-}
-.row {
-    display:flex;
-    width:100%;
-    gap:5px;
-}
-.grid-container {
-    display: flex;
-    grid-template-columns: 1fr 1fr; /* Due colonne di larghezza uguale */
-    gap: 5px; /* Spaziatura tra le immagini */
 
-}
-.img_lista {
-    max-width: 350px; /* Larghezza massima delle immagini */
-    height: auto; /* Mantiene il rapporto di aspetto delle immagini */
-    margin-left: 50px;
-    margin-right: 50px;
-    object-fit: cover;
-    width: 250px;/*definisce la largezza delle img*/
-    height: 300px;/*definisce quanto deve esere alta una img*/
-}
-.grid-container img {
-    max-width: 50%; /* Impedisce alle immagini di superare la larghezza del contenitore */
-    height: auto; /* Mantiene il rapporto di aspetto delle immagini */
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    padding-left: 30px
-}
-p { 
-    overflow: hidden; /* Per evitare che il testo si sovrapponga alle immagini */
-}
-.text-container {
-    margin-right: 50px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding-left: 10px; /* Spaziatura tra l'immagine e il testo */
-    flex:1;
-}
-.gerarchia{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.spazio_testo{
-    padding-top: 15px;
-}
+    @media (max-width:800px) {
+        .griglia-eventi {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 20px;
+        }
+    }
