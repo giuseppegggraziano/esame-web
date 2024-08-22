@@ -291,13 +291,13 @@ a {
 
 .card__text {
     background-color: #101010;
-    padding: 16px;
+    
     color: #fff;
 }
 
 .card__text:hover {
     background-color: yellow;
-    padding: 16px;
+    
     color: #000000;
     transition-duration: 0.3s;
 }
@@ -305,6 +305,8 @@ a {
 .card__text a {
     color: #fff;
 }
+
+
 
 .card img {
     height: 250px;
@@ -365,7 +367,7 @@ a {
     height: 250px;
     width: 100%;
     object-fit: cover;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .paragrafo-didascalico {
@@ -479,13 +481,20 @@ footer {
 .griglia-eventi .singolo-evento {
     display: flex;
     background-color: #fff;
-    box-shadow: 1px 1px 10px lightgray;
+    border: lightgray 2px solid;
+    border-radius: 10px;
 }
 
 .griglia-eventi .singolo-evento img {
     width: 250px;
     /* height: 250px; /*forse da togliere*/
     object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.griglia-eventi .singolo-evento:hover {
+    border: rgb(135, 135, 135) 2px solid;
+    border-radius: 10px;
 }
 
 .paragrafo-troncato {
