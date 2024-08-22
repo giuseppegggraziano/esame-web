@@ -586,3 +586,11 @@ footer {
             margin: 20px;
         }
     }
+
+@media (max-width:400px) {
+
+    .main-aree {
+        margin-left: 5px;
+        min-width: 250px;
+    }
+}
