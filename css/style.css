@@ -560,8 +560,9 @@ footer {
     }
 
     .universale__container {
-        font-size: small;
+        font-size: medium;
         width: 100%;
+        min-width: 400px;
     }
 
     .universale {
