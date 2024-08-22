@@ -160,18 +160,18 @@ nav a, header a {
 }
 
 .universale__container {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .universale__container, .universale__image {
-    max-width: 40%; /* 50% ? */
+    max-width: 50%;
 }
 
 .universale__container, .universale__image__eventi {
-    max-width: 40%; /* 50 ? */
+    max-width: 50%; 
 }
 
 .universale__image__eventi {
