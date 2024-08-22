@@ -327,14 +327,14 @@ a {
 .eventxhover {
     color: white;
     transition-duration: 0.5s;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .eventxhover:hover {
     background-color: yellow;
     color: #000000;
     transition-duration: 0.5s;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .eventi p {
