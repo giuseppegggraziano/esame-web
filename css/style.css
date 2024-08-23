@@ -511,26 +511,29 @@ footer {
 
 /* fine test eventi */
 
-@media (max-width:600px) /* o la misura che volete */  {
-    /*.hero {
+   @media (max-width:600px) {
+    .hero {
         flex-direction: column;
     }
 
     .hero__container, .hero__image {
         width: 100%;
-    } */
+    } 
 
-    .herotext { /* perchè non funziona? */
+    
+
+    .herotext {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        position: ;
+        transform: translate(-55%, -55%);
         background-color: rgb(0, 0, 0, 0);
-        color: white; padding: 20px;
+        color: white; 
+        padding: 20px;
         text-align: left;
+        font-size: smaller;
     }
-
+/*
     .info {
         padding-left: 15px;
     }
@@ -579,6 +582,7 @@ footer {
     }
 }
 
+
     @media (max-width:800px) {
         .griglia-eventi {
             display: grid;
@@ -594,3 +598,5 @@ footer {
         min-width: 250px;
     }
 }
+
+*/
