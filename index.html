@@ -15,18 +15,14 @@
         <header>
             
             <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
-            <!--
+            
             <nav>
-                <ul>
-                    <li><a href="#primo" name="#primo">Museo Tattile</a></li>
-                    <li><a href="chi-siamo.html">Giardino sensoriale</a></li>
-                    <li><a href="#terzo" name="#terzo">Bar al buio</a></li>
-                    <li><a href="#quarto" name="#quarto">Showroom</a></li>
-                </ul>
-            </nav>
-            -->
-            <nav>
-                <ul>
+                <!-- aggiunta per hamburger test -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776; <!-- Codice HTML per l'icona hamburger -->
+                </div>
+                <!-- aggiunta per hamburger test  -->
+                <ul id="menu">
                     <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
                         <div class="dropdown-content">
                             <a href="museo-tattile-borges.html">Museo Tattile</a>
@@ -37,11 +33,21 @@
                     </li>
 
                     <li><a href="Pagina Eventi .html"><button class="button button1">Eventi</button></a></li>
-
                     <li><a href="chi-siamo.html"><button class="button button1">Chi siamo</button></a></li>
                 </ul>
             </nav> 
         </header>
+
+        
+        <!-- javatest -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+            
+        <!-- javatest -->
         
         <!--
         <section class="hero"> 
@@ -76,61 +82,64 @@
 
         <main>
 
-            <section>
-                <div class="info">
-                    <a><h2> Le nostre Aree </h2></a>
+                <section>
+                    <div class="info">
+                        <a><h2> Le nostre Aree </h2></a>
 
-                    <p class="paragrafo-didascalico">
-                        Il Polo si occupa attivamente di <b>integrazione</b> culturale e sociale, fornendo a vedenti e no attività culturali ed empatiche. Ciò è possibile attraverso le nostre Aree, ognuna specializzata in un servizio.
-                        </p>
-                 </div>
+                        <p class="paragrafo-didascalico">
+                            Il Polo si occupa attivamente di <b>integrazione</b> culturale e sociale, fornendo a vedenti e no attività culturali ed empatiche. Ciò è possibile attraverso le nostre Aree, ognuna specializzata in un servizio.
+                            </p>
+                    </div>
+                </section>
+                
+            <section class="aree">
+                <section class="card">
+                    <div class="cover">
+                        <a href="museo-tattile-borges.html">
+                        
+                        <div class="card__text">
+                            <img src="img/museo 1.png" alt="">
+                            <div style="padding: 16px 0px 16px 16px;">
+                                <h3> Museo Tattile Borges </h3>
+                            </div>
+                        </div></a>
+                    </div>
+
+                    <div>
+                        <a href="giardino-sensoriale.html">
+                        
+                        <div class="card__text">
+                            <img src="img/giardino 3.png" alt="">
+                            <div style="padding: 16px 0px 16px 16px;">
+                                <h3>Giardino sensoriale</h3>
+                            </div>
+                        </div></a>
+                    </div>
+
+                    <div>
+                        <a href="bar-al-buio.html">
+                        
+                        <div class="card__text">
+                            <img src="img/Bar_al_buio.jpg" alt="">
+                            <div style="padding: 16px 0px 16px 16px;">
+                                <h3>Bar al buio</h3>
+                            </div>
+                        </div></a>
+                    </div>
+
+                    <div>
+                        <a href="frammenti-di-luce.html">
+                        
+                        <div class="card__text">
+                            <img src="img/showroom.jpg" alt="">
+                            <div style="padding: 16px 0px 16px 16px;">
+                                <h3>Showroom</h3>
+                            </div>
+                        </div></a>
+                    </div>
+                </section>
             </section>
 
-            <section class="card">
-                <div class="cover">
-                    <a href="museo-tattile-borges.html">
-                    
-                    <div class="card__text">
-                        <img src="img/museo 1.png" alt="">
-                        <div style="padding: 16px 0px 16px 16px;">
-                            <h3> Museo Tattile Borges </h3>
-                        </div>
-                    </div></a>
-                </div>
-
-                <div>
-                    <a href="giardino-sensoriale.html">
-                    
-                    <div class="card__text">
-                        <img src="img/giardino 3.png" alt="">
-                        <div style="padding: 16px 0px 16px 16px;">
-                            <h3>Giardino sensoriale</h3>
-                        </div>
-                    </div></a>
-                </div>
-
-                <div>
-                    <a href="bar-al-buio.html">
-                    
-                    <div class="card__text">
-                        <img src="img/Bar_al_buio.jpg" alt="">
-                        <div style="padding: 16px 0px 16px 16px;">
-                            <h3>Bar al buio</h3>
-                        </div>
-                    </div></a>
-                </div>
-
-                <div>
-                    <a href="frammenti-di-luce.html">
-                    
-                    <div class="card__text">
-                        <img src="img/showroom.jpg" alt="">
-                        <div style="padding: 16px 0px 16px 16px;">
-                            <h3>Showroom</h3>
-                        </div>
-                    </div></a>
-                </div>
-            </section>
 
             <section class="eventi">
                 <div class="info">
