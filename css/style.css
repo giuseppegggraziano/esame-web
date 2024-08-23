@@ -76,6 +76,15 @@ header {
     align-items: center;
 }
 
+/* Stili per l'icona hamburger */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+/*  */
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -88,6 +97,9 @@ nav a, header a {
     color: white;
     text-decoration: none;
 }
+
+
+
 
 /*
 
@@ -160,18 +172,18 @@ nav a, header a {
 }
 
 .universale__container {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .universale__container, .universale__image {
-    max-width: 40%; /* 50% ? */
+    max-width: 50%;
 }
 
 .universale__container, .universale__image__eventi {
-    max-width: 40%; /* 50 ? */
+    max-width: 50%; 
 }
 
 .universale__image__eventi {
@@ -276,6 +288,12 @@ a {
 
 /*fine dropdown*/
 
+.aree img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -291,13 +309,12 @@ a {
 
 .card__text {
     background-color: #101010;
-    padding: 16px;
     color: #fff;
+    border-radius: 8px;
 }
 
 .card__text:hover {
     background-color: yellow;
-    padding: 16px;
     color: #000000;
     transition-duration: 0.3s;
 }
@@ -306,10 +323,13 @@ a {
     color: #fff;
 }
 
+
+
 .card img {
     height: 250px;
     max-width: 100%;
     object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .eventi {
@@ -327,14 +347,14 @@ a {
 .eventxhover {
     color: white;
     transition-duration: 0.5s;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .eventxhover:hover {
     background-color: yellow;
     color: #000000;
     transition-duration: 0.5s;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .eventi p {
@@ -352,6 +372,7 @@ a {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .info {
@@ -365,7 +386,7 @@ a {
     height: 250px;
     width: 100%;
     object-fit: cover;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .paragrafo-didascalico {
@@ -479,13 +500,20 @@ footer {
 .griglia-eventi .singolo-evento {
     display: flex;
     background-color: #fff;
-    box-shadow: 1px 1px 10px lightgray;
+    border: lightgray 2px solid;
+    border-radius: 10px;
 }
 
 .griglia-eventi .singolo-evento img {
     width: 250px;
     /* height: 250px; /*forse da togliere*/
     object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.griglia-eventi .singolo-evento:hover {
+    border: rgb(135, 135, 135) 2px solid;
+    border-radius: 10px;
 }
 
 .paragrafo-troncato {
@@ -501,77 +529,57 @@ footer {
 
 /* fine test eventi */
 
-@media (max-width:600px) /* o la misura che volete */  {
-    /*.hero {
+@media (max-width:500px) 
+{
+    nav ul {
+        display: none;
         flex-direction: column;
+        gap: 10px;
     }
 
-    .hero__container, .hero__image {
-        width: 100%;
-    } */
+    .menu-icon {
+        display: block;
+    }
 
-    .herotext { /* perchè non funziona? */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* test hamburger */
+
+    .herotext {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        position: ;
+        transform: translate(-85%, -55%);
         background-color: rgb(0, 0, 0, 0);
-        color: white; padding: 20px;
-        text-align: left;
+        font-size: xx-small;
+        min-width: 300px;
     }
-
-    .info {
-        padding-left: 15px;
-    }
-
-    .eventi {
-        padding-left: 15px;
-    }
-
-    .card_container {
-        padding-left: 15px;
-    }
-
-    .visite {
-        flex-direction: column;
-    }
-    
-    .visite div {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .hero__container {
-        font-size: small;
-    }
-
-    .universale__container {
-        font-size: small;
-        width: 100%;
-    }
-
-    .universale {
-        flex-direction: column;
-    }
-
-    .universale__container, .universale__image {
-        width: 100%;
-    }
-
-    .griglia-eventi {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-    @media (max-width:800px) {
-        .griglia-eventi {
-            display: grid;
-            grid-template-columns: 1fr;
-            margin: 20px;
+        .hero {
+            flex-direction: column;
         }
+
+        .hero__container, .hero__image {
+            width: 100%;
+        } 
+
     }
+
+    @media (max-width:800px) 
+    {
+
+        .herotext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-65%, -55%);
+            background-color: rgb(0, 0, 0, 0);
+            font-size: smaller;
+            min-width: 400px;
+        }
+
+        .info {
+            max-width: 400px;
+        }
+}
