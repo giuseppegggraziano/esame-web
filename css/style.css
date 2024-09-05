@@ -33,7 +33,13 @@ ul {
 }
 
 .breadcrumb {
-    padding: 0 20px;
+    
+}
+
+@media (max-width: 768px) {
+  .breadcrumb{
+    padding: 0px 20px 0px 20px
+  }
 }
 
 .breadcrumb li {
@@ -151,7 +157,7 @@ header a {
   }
 
 .universale__container {
-    padding: 0 20px;
+    padding: 0px 20px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +194,7 @@ header a {
 @media (max-width: 768px) {
   .universale__container{
     max-width: 100%;
+    padding: 0px 20px 20px 20px;
   }
 }
 
