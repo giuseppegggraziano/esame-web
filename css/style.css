@@ -76,7 +76,7 @@ img {
 }
 
 header {
-    padding: 10px 40px 0px 40px;
+    padding: 10px 40px 10px 40px;
     background-color: #101010;
     margin: auto;
     display: flex;
@@ -483,10 +483,25 @@ footer {
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .griglia-eventi .singolo-evento  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .griglia-eventi .singolo-evento img {
     width: 250px;
     object-fit: cover;
     border-radius: 8px 0px 0px 8px;
+    height: 350px;
+}
+
+@media (max-width: 768px) {
+    .griglia-eventi .singolo-evento img {
+        height: 30vh;
+        width: 100%;
+    }
 }
 
 .griglia-eventi .singolo-evento:hover {
@@ -624,6 +639,11 @@ footer {
         padding: 10px;
     }
 
+    @media (max-width: 768px) {
+        .singolo-evento .text {
+            width: 90%;
+    }
+
     .singolo-evento h3 {
         margin-top: 0;
     }
@@ -642,5 +662,4 @@ footer {
         transform: translate(-50%, -50%);
     }
 }
-
 
