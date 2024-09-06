@@ -670,3 +670,9 @@ footer {
     }
 }
 
+/* ! Pagine finali */
+
+.pagine-footer{
+    margin: auto;
+    width: 800px;
+}
