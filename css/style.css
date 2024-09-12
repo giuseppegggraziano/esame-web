@@ -430,6 +430,14 @@ footer {
     gap: 16px;
 }
 
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+}
+
 .contenitore-eventi {
     display: grid;
     grid-template-columns: 1fr 1fr;
