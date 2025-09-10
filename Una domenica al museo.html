@@ -4,178 +4,196 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eventi</title>
+        <title>Una domenica al museo</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 
-<body>
-
-<!-- #region inizio Header /////////////////////////////////////////////////////////////////////////////////////////-->
- 
-<header>
-    <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
-    
-    <nav>
-        <ul>
-            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
-                <div class="dropdown-content">
-                    <a href="museo-tattile-borges.html">Museo Tattile</a>
-                    <a href="giardino-sensoriale.html">Giardino sensoriale</a>
-                    <a href="bar-al-buio.html">Bar al buio</a>
-                    <a href="frammenti-di-luce.html">Showroom</a>
+    <body>
+        <header>
+            
+            <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
+            
+            <nav>
+                <!-- aggiunta per hamburger test -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776; <!-- Codice HTML per l'icona hamburger -->
                 </div>
-            </li>
+                <!-- aggiunta per hamburger test  -->
+                <ul id="menu">
+                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
+                        <div class="dropdown-content">
+                            <a href="museo-tattile-borges.html">Museo Tattile</a>
+                            <a href="giardino-sensoriale.html">Giardino sensoriale</a>
+                            <a href="bar-al-buio.html">Bar al buio</a>
+                            <a href="frammenti-di-luce.html">Showroom</a>
+                        </div>
+                    </li>
 
-            <li><a href="Pagina Eventi .html"><button class="button button1">Eventi</button></a></li>
+                    <li><a href="Pagina Eventi .html"><button class="button button1">Eventi</button></a></li>
+                    <li><a href="chi-siamo.html"><button class="button button1">Chi siamo</button></a></li>
+                </ul>
+            </nav> 
+        </header>
 
-            <li><a href="chi-siamo.html"><button class="button button1">Chi siamo</button></a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<main>
-
-    <ul class="breadcrumb" style="margin-bottom: 20px; padding-top: 20px; max-width: 1200px; margin: auto;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Pagina Eventi .html">Eventi</a></li>
-        <li>Apertura straordinaria</li>
-    </ul>
-    
-    <section class="universale">
         
-        <div class="universale__image__eventi">
-            <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="">
-        </div>    
-        <div class="universale__container">   
-            <a href=""></a>
-            <h2>Una domenica al museo</h2>
+        <!-- javatest -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script>
 
-            <p>Ritorna l’appuntamento con "Una Domenica al Museo" presso il Polo Tattile Multimediale della Stamperia Regionale Braille di Catania, in Via Etnea 602. L'iniziativa, promossa dal Ministero dei Beni e delle Attività Culturali e del Turismo, si svolge in tutta Italia la prima domenica di ogni mese. Vi invitiamo a partecipare domenica 4 giugno, dalle 17:00 alle 21:00, per un’esperienza multisensoriale unica.</p>
+<!-- Z /////////////////////////////////////////////////////////////////////////-->
+               
+        <main style="margin: auto; max-width: 1200px;">
 
-            <p>Nel Museo Borges potrete esplorare capolavori d’arte tramite il tatto, compiendo un viaggio ideale lungo il Mediterraneo. Scoprite plastici architettonici, opere pittoriche in rilievo come la "Creazione di Adamo" e la "Gioconda", e sculture realizzate dalla Stamperia Regionale Braille.</p>
+            <ul class="breadcrumb" style="margin: 20px 0px 20px 0px;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Aree</a></li>
+                <li>Una domenica al museo</li>
+            </ul>
 
-            <p>I visitatori speciali potranno percorrere il museo grazie a percorsi tattilo-plantari e godere del Giardino Sensoriale, un'oasi verde arricchita da essenze mediterranee. Il "Bar al Buio" offre un'esperienza coinvolgente, dove i non vedenti guideranno gli ospiti in un ambiente completamente oscuro.</p>
+            <section class="universale">   
+                
+                <div class="universale__container">   
+                    <a href=""></a> 
+                    <h2>Una domenica al museo</h2>
+                    
+                    <p>Nel Museo Borges potrete esplorare capolavori d’arte tramite il tatto, compiendo un viaggio ideale lungo il Mediterraneo. Scoprite plastici architettonici, opere pittoriche in rilievo come la "Creazione di Adamo" e la "Gioconda", e sculture realizzate dalla Stamperia Regionale Braille.</p>
 
-            <p>Infine, lo showroom "Frammenti di Luce" presenta ausili per non vedenti e ipovedenti, offrendo a tutti l'opportunità di conoscere strumenti per l'autonomia personale e didattica. L’ingresso è gratuito e non è necessaria la prenotazione.</p>
+                    <p style="padding-top: 10px;">I visitatori potranno percorrere il museo grazie a percorsi tattilo-plantari e godere del Giardino Sensoriale, un'oasi verde arricchita da essenze mediterranee. Il "Bar al Buio" offre un'esperienza coinvolgente, dove i non vedenti guideranno gli ospiti in un ambiente completamente oscuro.</p>
+                    
+                    <p style="padding-top: 10px;">Infine, lo showroom "Frammenti di Luce" presenta ausili per non vedenti e ipovedenti, offrendo a tutti l'opportunità di conoscere strumenti per l'autonomia personale e didattica. L’ingresso è gratuito e non è necessaria la prenotazione.</p>
+                    
+                    <p>Per informazioni, contattateci al 095/500177 o via email a visite@polotattile.it.</p>
+                </div>
 
-            <p>Per informazioni, contattateci al 095/500177 o via email a visite@polotattile.it.</p>
-        </div>
-</section>
 
-<section>
-    <div class="info">
-        <h2>
-            Altri eventi
-        </h2>
-    </div>
-</section>
-<!-- card-->
-<section class="card">
+                <div class="universale__image">
+                    <img src="img/PTI, con gli occhi chiusi per leggere con le dita (allievi Turrisi Colonna, Catania), LGT-2.jpg" alt="">
+                </div>
+                
+            </section>
+
+        </main>
+
+        <section>
+            <div class="info">
+                <a><h2>Altri eventi </h2></a>
+            </div>
+        </section>
+
+        <section class="aree">
+            <section class="card">
+                <div class="cover">
+                    <a href="eventi.html">
+                    
+                    <div class="card__text">
+                        <img src="img/abitare-gli-abiti.jpg" alt="">
+                        <div style="padding: 16px 0px 16px 16px;">
+                            <h3>Libro "Abitare gli abiti"</h3>
+                            <p>11/08/24</p>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div>
+                    <a href="festival le vie dei tesori .html">
+                    
+                    <div class="card__text">
+                        <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="">
+                        <div style="padding: 16px 0px 16px 16px;">
+                            <h3>Festival "Le Vie dei Tesori"</h3>
+                            <p>11/08/24</p>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div>
+                    <a href="notte di luce al museo .html">
+                    
+                    <div class="card__text">
+                        <img src="img/notte-dei-musei.jpg" alt="">
+                        <div style="padding: 16px 0px 16px 16px;">
+                            <h3>Notte di luce al museo</h3>
+                            <p>11/08/24</p>
+                        </div>
+                    </div></a>
+                </div>
+
+            </section>
+        </section>
+                    
+    </body>
+<!-- pre-footer ------------------------------------->
+                <Section class="visite">
+                <div>
+                    
+                    <h2>
+                        <a name="quarto">Visite</a>
+                    </h2>
+                    
+                    <p>
+                        Per gruppi di massimo 6 persone è consigliata la prenotazione. Per gruppi di oltre 6 persone e scolaresche è <b>obbligatoria</b> la prenotazione.
+                        È possibile prenotare contattando i nostri uffici in una delle seguenti modalità:
+                    </p>
+                        <ul class="lista-contatti">
+                            <li>Numero di telefono +39 095 500177</li>
+                            <li>Numero fax +39 095 509 881</li>
+                            <li>Indirizzo mail: visite@polotattile.it</li>
+                        </ul>
+                    <p>
+                        Vi preghiamo di specificare sempre il <b>numero di visitatori</b>, la <b>data</b> e un <b>contatto</b> al quale confermare la visita.
+                        Per informazioni generali mè possibile mandare una mail all'indirizzo <b>info@polotattile.it</b>
+                    </p>
+                    
+                    <div class="spazio_testo">
+                        
+                        <p style="font-weight: bolder;">
+                        Orari visite 
+                        </p>
+                        
+                        <ul>
+                            <li>Lun: 8:30 — 13:30</li>
+                            <li>Mar Mer Gio: 8:30 — 13:30 / 14:30 — 16:30</li>
+                            <li>Ven: 8:30 — 13:30</li>
+                            <li>Sab: 8:30 — 12:00</li>
+                            <li>Dom e festivi chiuso</li>
+                        
+                        </ul>
+                    
+                    </div>
+                
+                </div>
+                
+                <div>  
+                    <img style="" src="img/inserire nella home.jpg" alt="">
+                </div>
+
+            </Section>
+<!-- #region ///////////////////////////////////////////////////////////////////////////////////////////////-->
+<footer>          
+
     <div>
-        <a href="festival le vie dei tesori .html" target="blank" rel="noopener noreferrer">
-        <img src="img/le_vie_dei_tesori_catania1200x789-1024x673.jpg" alt="">
-       
-        <div class="card__text">
-            <h3><a href="festival le vie dei tesori .html">Festival "le vie dei Tesori"</a></h3>
-            <p>6 marzo 2024 h 17:00</p>
-        </div>
+        <ul class="test-link">
+            <li><a href="https://www.facebook.com/polotattilemultimediale/">Facebook</a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2FStamp_Braille">X</a></li>
+            <li><a href="https://www.youtube.com/watch?v=rd3L_MPc258">YouTube</a></li>
+        </ul>
     </div>
-    </a>
-    
-    <div>
-        <a href="notte di luce al museo .html">
-        <img src="img/notte-dei-musei.jpg" alt="">
-        <div class="card__text">
-            <h3><a href="">Notte di "Luce" al Museo</a></h3>
-            <p>28 febbraio 2023 h 23:00</p>
-        </div>
-    </div>
-    </a>
 
     <div>
-        <a href="eventi.html" target="blank" rel="noopener noreferrer">
-        <img src="img/abitare-gli-abiti.jpg" alt="">
-        </a>
-        <div class="card__text">
-            <h3><a href="eventi.html">Presentazione libro Abitare gli abiti</a></h3>
-            <p>6 marzo 2023 h 17:00</p>
-        </div>
-        
-    </div>
-
-
-</section>
-<!-- pre footer  -->
-</body>
-<Section class="visite">
-<div>
-    
-    <h2>
-        <a name="quarto">Visite</a>
-    </h2>
-
-    <p>
-        Per gruppi di massimo 6 persone è consigliata la prenotazione. Per gruppi di oltre 6 persone e scolaresche è <b>obbligatoria</b> la prenotazione.
-        È possibile prenotare contattando i nostri uffici in una delle seguenti modalità:
-    </p>
-        <ul class="lista-contatti">
-            <li>Numero di telefono +39 095 500177</li>
-            <li>Numero fax +39 095 509 881</li>
-            <li>Indirizzo mail: visite@polotattile.it</li>
+        <ul class="test-link">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookie.html">Cookies Policy</a></li>
+            <li><a href="condizioni-e-trattamento-dati.html">Condizioni e trattamento dati</a></li>
         </ul>
-    <p>
-        Vi preghiamo di specificare sempre il <b>numero di visitatori</b>, la <b>data</b> e un <b>contatto</b> al quale confermare la visita.
-        Per informazioni generali mè possibile mandare una mail all'indirizzo <b>info@polotattile.it</b>
-    </p>
-    
-    <div class="spazio_testo">
-        
-        <p style="font-weight: bolder;">
-        Orari visite 
-        </p>
-        
-        <ul>
-            <li>Lun: 8:30 — 13:30</li>
-            <li>Mar Mer Gio: 8:30 — 13:30 / 14:30 — 16:30</li>
-            <li>Ven: 8:30 — 13:30</li>
-            <li>Sab: 8:30 — 12:00</li>
-            <li>Dom e festivi chiuso</li>
-        
-        </ul>
-    
     </div>
-
-</div>
-
-<div>  
-    <img style="" src="img/inserire nella home.jpg" alt="">
-</div>
-
-</Section>
-<!-- footer-->
-
-<footer>
-             
-
-<div>
-    <ul class="test-link">
-        <li><a href="https://www.facebook.com/polotattilemultimediale/">Facebook</a></li>
-        <li><a href="https://x.com/i/flow/login?redirect_after_login=%2FStamp_Braille">X</a></li>
-        <li><a href="https://www.youtube.com/watch?v=rd3L_MPc258">YouTube</a></li>
-    </ul>
-</div>
-
-<div>
-    <ul class="test-link">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="cookie.html">Cookies Policy</a></li>
-        <li><a href="condizioni-e-trattamento-dati.html">Condizioni e trattamento dati</a></li>
-    </ul>
-</div>
-<p style="text-align: center; background: #101010; color: white;padding-bottom: 20px; width: 40%;">© Copyright 2024. Polo Tattile Multimediale. Tutti i diritti riservati.</p>
+<p style="background: #101010; color: white;padding-bottom: 20px; width: 40%;">© Copyright 2024. Polo Tattile Multimediale. Tutti i diritti riservati.</p>
 </footer>
+
 </html>

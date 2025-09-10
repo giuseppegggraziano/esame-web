@@ -13,10 +13,16 @@
 
     <body>
         <header>
+            
             <a href="index.html"><img class="marchio-nav"; src="img/marchio_ptm.png" alt=""></a>
             
             <nav>
-                <ul>
+                <!-- aggiunta per hamburger test -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776; <!-- Codice HTML per l'icona hamburger -->
+                </div>
+                <!-- aggiunta per hamburger test  -->
+                <ul id="menu">
                     <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"><button class="button button1">Aree</button></a>
                         <div class="dropdown-content">
                             <a href="museo-tattile-borges.html">Museo Tattile</a>
@@ -27,12 +33,19 @@
                     </li>
 
                     <li><a href="Pagina Eventi .html"><button class="button button1">Eventi</button></a></li>
-
                     <li><a href="chi-siamo.html"><button class="button button1">Chi siamo</button></a></li>
                 </ul>
-            </nav>
-
+            </nav> 
         </header>
+
+        
+        <!-- javatest -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script>
     
     <!-- #region ///////////////////////////////////////////////////////////////////////////////////////-->
 
@@ -60,7 +73,7 @@
                     souvenir e molto altro.
                   </p>  
     
-                  <p> 
+                  <p style="padding-top: 10px;"> 
                     Per i non vedenti con disabilità aggiuntive,
                     viene fornita la giusta consulenza che li indirizza all’uso di prodotti adatti alle loro abilità residue.
                     Siamo accreditati presso le ASP per la fornitura gratuita degli ausili riportati sul nomenclatore tariffario nazionale.
@@ -142,7 +155,7 @@
                 <li><a href="condizioni-e-trattamento-dati.html">Condizioni e trattamento dati</a></li>
             </ul>
         </div>
-        <p style="text-align: center; background: #101010; color: white;padding-bottom: 20px; width: 40%;">© Copyright 2024. Polo Tattile Multimediale. Tutti i diritti riservati.</p>
+        <p style="background: #101010; color: white;padding-bottom: 20px; width: 40%;">© Copyright 2024. Polo Tattile Multimediale. Tutti i diritti riservati.</p>
     </footer>
 
 </html>
